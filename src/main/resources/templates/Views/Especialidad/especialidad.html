@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Especialidad</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/JS/especialidad.js"></script>
+<link rel=stylesheet href="/CSS/style.css" type="text/css">
+</head>
+<body>
+	<nav>
+		<div id="cont">
+			<ul id="ejm1">
+				<li><a href="http://localhost:8080/especialidad/index"
+					title="Especialidad">Especialidad</a></li>
+				<li><a href="http://localhost:8080/doctor/index" title="Doctor">Doctor</a></li>
+				<li><a href="http://localhost:8080/paciente/index"
+					title="Paciente">Paciente</a></li>
+				<li><a href="http://localhost:8080/consulta/index"
+					title="Consulta">Consulta</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<h1>Listado de Especialidades</h1>
+		<button class="btn btn-primary">Nuevo</button>
+		<table class="table table-hover mt-4">
+			<thead class="bg-info">
+				<tr>
+					<th scope="row">ID</th>
+					<th>Especialidad</th>
+					<th>Editar</th>
+					<th>Eliminar</th>
+				</tr>
+			</thead>
+			<tbody id="datos">
+
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

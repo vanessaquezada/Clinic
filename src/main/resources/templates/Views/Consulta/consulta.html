@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Consulta</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/JS/consulta.js"></script>
+<link rel=stylesheet href="/CSS/style.css" type="text/css">
+</head>
+<body>
+	<nav>
+	<div id="cont">
+		<ul id="ejm1">
+            <li><a href="http://localhost:8080/especialidad/index" title="Especialidad">Especialidad</a></li>
+            <li><a href="http://localhost:8080/doctor/index" title="Doctor">Doctor</a></li>
+            <li><a href="http://localhost:8080/paciente/index" title="Paciente">Paciente</a></li>
+            <li><a href="http://localhost:8080/consulta/index" title="Consulta">Consulta</a></li>
+        </ul>
+        </div>
+	</nav>
+	<div class="container">
+		<h1>Listado de Consultas</h1>
+		<button class="btn btn-primary" data-toggle="modal" data-target="#nuevo">Nuevo</button>
+		<table class="table table-hover mt-4">
+			<thead class="bg-info">
+				<tr>
+					<th scope="row">ID</th>
+					<th>Fecha</th>
+					<th>Sintomas</th>
+					<th>Diagnostico</th>
+					<th>Doctor</th>
+					<th>Paciente</th>
+					<th>Editar</th>
+					<th>Eliminar</th>
+				</tr>
+			</thead>
+			<tbody id="datos">
+
+			</tbody>
+		</table>
+	</div>
+	
+	<!-- Modal Para un Nuevo Registro -->
+      <div class="modal" id="nuevo">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header bg-primary">
+              <h4 class="modal-title text-white">Agregar Consulta</h4>
+              <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Body del Modal -->
+            <div class="modal-body">
+                <div class="form-group">
+                        <label for="fecha">Fecha</label>
+                       <input type="date" name="fecha" id="fecha" class="form-control" placeholder="ingrese la fecha" >
+                 </div>
+                 <div class="form-group">
+                        <label for="sintomas">Sintomas</label>
+                        <input type="text" name="sintomas" id="sintomas" class="form-control" placeholder="digite el sintomas" >
+                  </div>
+                 <div class="form-group">
+                        <label for="diagnostico">Diagnostico</label>
+                        <input type="text" name="diagnostico" id="diagnostico" class="form-control" placeholder="digite el diagnostico" >
+                 </div>
+                 <div class="form-group">
+						<label for="doctor">Doctor:</label>
+						<select name="doctor" id="doctor" class="form-control">
+		                            
+		        		</select>
+				</div>
+				<div class="form-group">
+						<label for="paciente">Paciente:</label>
+						<select name="paciente" id="paciente" class="form-control">
+		                            
+		        		</select>
+				</div>
+            </div>
+      
+            <!-- Footer del Modal -->
+            <div class="modal-footer">
+              <button id="btnGuardar" type="button" class="btn btn-success ml-5" data-dismiss="modal">Guardar</button>
+              <button id="btncancelar" type="button" class="btn btn-danger ml-5" data-dismiss="modal">Cancelar</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+</body>
+</html>
